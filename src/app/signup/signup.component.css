@@ -1,0 +1,94 @@
+.msg h6 {
+    margin-top: 75px;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.join h1 {
+    margin-left: 7%;
+    font-style: italic;
+    color: rgb(10, 64, 65);
+}
+
+.imge {
+    margin-top: 30px;
+    margin-left: 40%;
+}
+
+.email {
+    margin-top: 10px;
+}
+
+.email input {
+    width: 50%;
+    margin-left: 30%;
+}
+
+.email label {
+    margin-left: 30%;
+}
+
+.password {
+    margin-top: 10px;
+}
+
+.password input {
+    width: 50%;
+    margin-left: 30%;
+}
+
+.password label {
+    margin-left: 30%;
+}
+
+.log {
+    background-color: rgb(77, 184, 160);
+}
+
+.logr {
+    background-color: rgb(77, 184, 160);
+}
+
+.login {
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 330px;
+    text-justify: auto;
+}
+
+.paragraph {
+    margin-left: 35%;
+}
+
+.name {
+    margin-top: 50px;
+}
+
+.name label {
+    margin-left: 30%;
+}
+
+.name input {
+    width: 50%;
+    margin-left: 30%;
+}
+
+.confirmPassword {
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.confirmPassword input {
+    width: 330px;
+}
+
+.register {
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 330px;
+    text-justify: auto;
+}
+
+.paragraph {
+    margin-top: 10px;
+}

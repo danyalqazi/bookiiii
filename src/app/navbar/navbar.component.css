@@ -1,0 +1,18 @@
+/* .btn {
+    margin-left: 1040px;
+    border: dodgerblue;
+    border-radius: 40%;
+    background-color: gray;
+} */
+
+[nz-button] {
+    margin-left: 1040px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+    border-radius: 30%;
+    background-color: gray;
+    border: dodgerblue;
+    padding: 10px;
+    color: black;
+}
