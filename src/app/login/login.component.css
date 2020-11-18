@@ -4,15 +4,22 @@
     font-size: xx-large;
 }
 
-.signin h1 {
-    margin-left: 7%;
+
+/* .signin h1 {
+    margin-left: 70%;
     font-style: italic;
     color: rgb(10, 64, 65);
-}
+} */
 
 .imge {
     margin-top: 50px;
     margin-left: 40%;
+}
+
+.imge h1 {
+    margin-left: 8%;
+    font-style: italic;
+    color: rgb(10, 64, 65);
 }
 
 .email {
@@ -28,7 +35,8 @@
     margin-left: 30%;
 }
 
-.password {
+
+/* .password {
     margin-top: 10px;
 }
 
@@ -39,7 +47,7 @@
 
 .password label {
     margin-left: 30%;
-}
+} */
 
 .log {
     background-color: rgb(77, 184, 160);
@@ -58,4 +66,35 @@
 
 .paragraph {
     margin-left: 35%;
+}
+
+.login-form {
+    max-width: 300px;
+}
+
+.login-form-margin {
+    margin-bottom: 16px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.username {
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+.password {
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+.btnlogin {
+    margin-top: 20%;
+    margin-left: 40%;
 }
