@@ -21,11 +21,11 @@
                         "aot": true,
                         "assets": [
                             "src/favicon.ico",
-
+                            "src/_redirects",
                             "src/assets",
 
                             {
-                                "glob": "_redirects",
+                                "glob": "**/*",
                                 "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
                                 "output": "/assets/"
                             }
@@ -90,7 +90,7 @@
                         "karmaConfig": "karma.conf.js",
                         "assets": [
                             "src/favicon.ico",
-
+                            "src/_redirects",
                             "src/assets"
                         ],
                         "styles": [
