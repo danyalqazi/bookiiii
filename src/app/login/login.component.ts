@@ -9,8 +9,8 @@ import { LoginService } from '../login.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  validateForm!: FormGroup;
-  public login=[];
+  validateForm: FormGroup;
+  // public login=[];
   
 
   
@@ -24,8 +24,8 @@ export class LoginComponent implements OnInit {
   // }
 
   submitForm(): void{
-    if(this.validateForm!.valid){
-      this.LoginService.career(this.validateForm!.value).subscribe(result=>{
+    if(this.validateForm.valid){
+      this.LoginService.signin().subscribe(result=>{
         if(result.success){
           console.log(result);
           alert(result.message);
@@ -39,8 +39,8 @@ export class LoginComponent implements OnInit {
   constructor(private LoginService:LoginService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
-    this.LoginService.getCareer()
-    .subscribe(data=>this.login=data);
+    this.LoginService.signin()
+    .subscribe(data=>this.validateForm=data);
 
     this.validateForm = this.fb.group({
       userName: [null, [Validators.required]],

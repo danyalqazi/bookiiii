@@ -11,11 +11,11 @@ export class LoginService {
   constructor(private _http:HttpClient) { }
 
 
-  career(userData){
+  signup(userData){
     return this._http.post<any>(this._url,userData);
   }
 
-  getCareer():Observable<any>{
+  signin():Observable<any>{
     return this._http.get<any[]>(this._url);
 }
 }
