@@ -11,7 +11,7 @@
 }*/
 
 .imge {
-    margin-top: 30px;
+    margin-top: 12px;
     margin-left: 40%;
     margin-bottom: 5%;
 }
@@ -102,6 +102,11 @@
     max-width: 600px;
 }
 
-.register-are {
+.register-area {
     margin-bottom: 8px;
 }
+
+
+/* button {
+    width: 350px;
+} */

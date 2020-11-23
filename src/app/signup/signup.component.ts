@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { NzFormTooltipIcon } from 'ng-zorro-antd/form';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-signup',
@@ -17,10 +18,31 @@ export class SignupComponent implements OnInit {
   };
 
   submitForm(): void {
-    for (const i in this.validateForm.controls) {
-      this.validateForm.controls[i].markAsDirty();
-      this.validateForm.controls[i].updateValueAndValidity();
-    }
+
+    
+    console.log(this.validateForm.value);
+    this._signup.signup(this.validateForm.value).subscribe(data =>{
+      console.log(data);
+      console.log(data.code);
+      
+      // if(data.code == 200)
+      // this.router.navigate(['/dashboard']);
+      
+    })
+
+    // for (const i in this.validateForm.controls) {
+    //   this.validateForm.controls[i].markAsDirty();
+    //   this.validateForm.controls[i].updateValueAndValidity();
+    // }
+
+    // console.log(this.validateForm.value);
+    // const careerData=new FormData();
+    
+
+    // this._signup.signup(this.validateForm.value)
+    // .subscribe(
+    //   response =>console.log('Success!',response),
+    //   error =>console.error('Error!',error));
   }
 
   updateConfirmValidator(): void {
@@ -39,7 +61,7 @@ export class SignupComponent implements OnInit {
     return {};
   };
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private _signup:LoginService , private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.validateForm = this.fb.group({

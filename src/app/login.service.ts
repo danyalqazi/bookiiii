@@ -8,14 +8,16 @@ import { Observable } from 'rxjs';
 export class LoginService {
 
   _url='https://booky-backend.netlify.app/.netlify/functions/users-login';
+  url='https://booky-backend.netlify.app/.netlify/functions/users-signup';
+
   constructor(private _http:HttpClient) { }
 
 
   signup(userData){
-    return this._http.post<any>(this._url,userData);
+    return this._http.post<any>(this.url,userData);
   }
 
-  signin():Observable<any>{
-    return this._http.get<any[]>(this._url);
+  signin(user:any):Observable<any>{
+    return this._http.post<any[]>(this._url,user);
 }
 }
